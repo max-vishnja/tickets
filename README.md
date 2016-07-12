@@ -7,10 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```Max Vishnevsky``` ```maxvishnja``` ```mywebsite.com``` ```w.m.a@rambler.ru``` ```maxvishnja``` ```Tickets``` ```A system of communication between users through ticketing``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+A system of communication between users through ticketing
 
 ## Install
 
@@ -21,10 +18,11 @@ $ composer require maxvishnja/Tickets
 ```
 
 ## Usage
+you have to add this line on your config/app.php in Service Providers section
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+Kordy\Ticketit\TicketitServiceProvider::class,
+maxvishnja\Tickets\TicketsServiceProvider::class,
 ```
 
 ## Change log
